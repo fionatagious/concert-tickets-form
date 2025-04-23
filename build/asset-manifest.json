@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/concert-tickets/static/css/main.7bbadd84.css",
+    "main.js": "/concert-tickets/static/js/main.f7ab98d6.js",
+    "blueprint-icons-all-paths-loader.js": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.597cfdeb.chunk.js",
+    "blueprint-icons-split-paths-by-size-loader.js": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js",
+    "blueprint-icons-all-paths.js": "/concert-tickets/static/js/blueprint-icons-all-paths.46e58fa4.chunk.js",
+    "blueprint-icons-16px-paths.js": "/concert-tickets/static/js/blueprint-icons-16px-paths.11375095.chunk.js",
+    "blueprint-icons-20px-paths.js": "/concert-tickets/static/js/blueprint-icons-20px-paths.16ed0969.chunk.js",
+    "static/media/blueprint-icons-20.svg?": "/concert-tickets/static/media/blueprint-icons-20.b7836fd4f75903a6aaf3.svg",
+    "static/media/blueprint-icons-16.svg?": "/concert-tickets/static/media/blueprint-icons-16.75d3b3d6403fedeceed1.svg",
+    "static/media/btess.jpg": "/concert-tickets/static/media/btess.5c1209761f1a31efe697.jpg",
+    "static/media/cindy-and-the-scintillators.jpg": "/concert-tickets/static/media/cindy-and-the-scintillators.1826606ad82c32f6ed76.jpg",
+    "static/media/the-flaming-potatoes.jpg": "/concert-tickets/static/media/the-flaming-potatoes.1f4645d57207ea690ddc.jpg",
+    "static/media/blueprint-icons-20.eot?": "/concert-tickets/static/media/blueprint-icons-20.22d6e0a3d958fad47a9a.eot",
+    "static/media/blueprint-icons-20.ttf?": "/concert-tickets/static/media/blueprint-icons-20.ecae729c3a4c3b76bb5e.ttf",
+    "static/media/blueprint-icons-16.eot?": "/concert-tickets/static/media/blueprint-icons-16.f9c3c558e60ba31d85ab.eot",
+    "static/media/blueprint-icons-16.ttf?": "/concert-tickets/static/media/blueprint-icons-16.a829fa0b47aec7e64ef6.ttf",
+    "static/media/blueprint-icons-20.woff?": "/concert-tickets/static/media/blueprint-icons-20.5710fd762261d83e66dc.woff",
+    "static/media/blueprint-icons-16.woff?": "/concert-tickets/static/media/blueprint-icons-16.5d12ac902fb4bd41d526.woff",
+    "static/media/blueprint-icons-20.woff2?": "/concert-tickets/static/media/blueprint-icons-20.5fddb87d78220feedb71.woff2",
+    "static/media/blueprint-icons-16.woff2?": "/concert-tickets/static/media/blueprint-icons-16.fde3f423a3f0fed7df95.woff2",
+    "index.html": "/concert-tickets/index.html",
+    "main.7bbadd84.css.map": "/concert-tickets/static/css/main.7bbadd84.css.map",
+    "main.f7ab98d6.js.map": "/concert-tickets/static/js/main.f7ab98d6.js.map",
+    "blueprint-icons-all-paths-loader.597cfdeb.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.597cfdeb.chunk.js.map",
+    "blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js.map",
+    "blueprint-icons-all-paths.46e58fa4.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-all-paths.46e58fa4.chunk.js.map",
+    "blueprint-icons-16px-paths.11375095.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-16px-paths.11375095.chunk.js.map",
+    "blueprint-icons-20px-paths.16ed0969.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-20px-paths.16ed0969.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bbadd84.css",
+    "static/js/main.f7ab98d6.js"
+  ]
+}
