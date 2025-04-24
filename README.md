@@ -16,7 +16,7 @@ I used [Midjourney](https://www.midjourney.com/) to generate promotional posters
 
 ## 📦 Installation
 
-Clone the repo and install dependencies:
+I developed this app using Node version `v20.19.0`, but React 18.2.0 is compatible with Node 14.0.0 or higher.
 
 ```bash
 git clone https://github.com/fionatagious/concert-tickets-form.git
