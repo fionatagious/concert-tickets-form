@@ -19,8 +19,8 @@ I used [Midjourney](https://www.midjourney.com/) to generate promotional posters
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/fionatagious/concert-tickets.git
-cd concert-tickets
+git clone https://github.com/fionatagious/concert-tickets-form.git
+cd concert-tickets-form
 npm install
 ```
 
