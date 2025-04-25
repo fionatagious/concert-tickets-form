@@ -1,3 +1,5 @@
+import "@testing-library/jest-dom";
+
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import PersonalInformationForm from "./PersonalInformationForm";
@@ -128,12 +130,10 @@ describe("PersonalInformationForm", () => {
     await screen.findByText(/cvv must be exactly 3 digits/i);
   });
 
-  test("shows alert when Get Tickets button is clicked", async () => {
-    render(<PersonalInformationForm />);
+  test("disables the submit button when no tickets are selected", async () => {
+    render(<PersonalInformationForm zeroTicketsSelected={true} />);
 
-    const alertMock = jest.spyOn(window, "alert").mockImplementation(() => {});
-    const getTicketsButton = screen.getByTestId("get-tickets-button");
-    fireEvent.click(getTicketsButton);
-    expect(alertMock).toHaveBeenCalledWith("Tickets purchased!");
+    const submitButton = screen.getByTestId("get-tickets-button");
+    expect(submitButton).toBeDisabled();
   });
 });

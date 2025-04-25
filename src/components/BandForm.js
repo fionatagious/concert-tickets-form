@@ -34,6 +34,8 @@ function reducer(state, action) {
 function BandForm({ band }) {
   const [state, dispatch] = useReducer(reducer, {});
   const [totalCost, setTotalCost] = React.useState(0);
+  const [totalQuantity, setTotalQuantity] = React.useState(0);
+  const [zeroTicketsSelected, setZeroTicketsSelected] = React.useState(true);
 
   React.useEffect(() => {
     // update the totalCost whenever state changes or band.ticketTypes changes
@@ -42,7 +44,24 @@ function BandForm({ band }) {
       return acc + subtotal;
     }, 0);
     setTotalCost(totalCost);
+
+    // update the totalQuantity whenever state changes or band.ticketTypes changes
+    const totalQuantity = band.ticketTypes.reduce((acc, ticket) => {
+      const totalQuantity = state[`counter${ticket.id}-${ticket.type}`] ?? 0;
+      return acc + totalQuantity;
+    }, 0);
+    setTotalQuantity(totalQuantity);
   }, [band.ticketTypes, state]);
+
+  React.useEffect(() => {
+    // update zeroTicketsSelected whenever totalQuantity changes
+    if (totalQuantity > 0) {
+      console.log("at least one ticket selected", totalQuantity);
+      setZeroTicketsSelected(false);
+    } else {
+      setZeroTicketsSelected(true);
+    }
+  }, [totalQuantity]);
 
   return (
     <div className="bg-slate-100 px-6 pb-2 rounded-lg">
@@ -112,6 +131,7 @@ function BandForm({ band }) {
                     </button>
                   </div>
                 </td>
+                {/* Subtotal */}
                 <td className="text-right font-normal w-[100px]">
                   <span data-testid={`subtotal-${ticket.type}`}>
                     &#36;
@@ -130,7 +150,7 @@ function BandForm({ band }) {
           ${totalCost}
         </span>
       </div>
-      <PersonalInformationForm />
+      <PersonalInformationForm zeroTicketsSelected={zeroTicketsSelected} />
     </div>
   );
 }

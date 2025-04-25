@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { bandFormSchema } from "./bandFormSchema";
 
-export default function PersonalInformationForm() {
+export default function PersonalInformationForm({ zeroTicketsSelected }) {
   const {
     register,
     handleSubmit,
@@ -16,16 +16,18 @@ export default function PersonalInformationForm() {
     reValidateMode: "onBlur",
   });
 
+  // onSubmit is called when the form is submitted and all fields are valid
   const onSubmit = (data) => {
-    console.log("Form data:", data);
+    alert(`Tickets purchased! ${JSON.stringify(data)}`);
   };
 
-  function handleClick() {
-    alert("Tickets purchased!");
-  }
+  const onError = (errors) => {
+    console.log("Validation errors found", errors);
+    alert("Please fix the form errors before submitting.");
+  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="mt-6">
+    <form onSubmit={handleSubmit(onSubmit, onError)} className="mt-6">
       <p className="font-lg font-bold">Personal Information</p>
       <div className="grid grid-cols-2 gap-2">
         <Input
@@ -81,8 +83,9 @@ export default function PersonalInformationForm() {
       </div>
       <button
         data-testid="get-tickets-button"
-        className="w-full bg-teal-50 border-2 border-teal-800 text-teal-800 rounded-lg p-3 my-4 hover:bg-teal-800 hover:text-white"
-        onClick={handleClick}
+        disabled={zeroTicketsSelected}
+        type="submit"
+        className="w-full bg-teal-50 border-2 border-teal-800 text-teal-800 rounded-lg p-3 my-4 hover:bg-teal-800 hover:text-white disabled:bg-gray-200 disabled:border-gray-400 disabled:text-gray-500"
       >
         Get Tickets
       </button>
