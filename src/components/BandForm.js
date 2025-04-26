@@ -64,14 +64,14 @@ function BandForm({ band }) {
   }, [totalQuantity]);
 
   return (
-    <div className="bg-slate-100 px-6 pb-2 rounded-lg">
+    <div className="bg-slate-100 px-2 md:px-6 min-w-[50%] md:mx-6 pb-2 rounded-lg">
       <h3 className="text-xl font-bold ml-1 mt-4">Select Tickets</h3>
       <table>
         <thead>
           <tr>
-            <th className="w-[680px] text-left">Ticket Type</th>
-            <th className="w-[100px] text-left mr-4">Quantity</th>
-            <th className="w-[100px] text-right">Subtotal</th>
+            <th className="w-[70%] text-left">Ticket Type</th>
+            <th className="w-[15%] text-left mr-4">Quantity</th>
+            <th className="w-[15%] text-right">Subtotal</th>
           </tr>
         </thead>
         <tbody>
@@ -79,7 +79,7 @@ function BandForm({ band }) {
             <React.Fragment>
               <tr key={ticket.type}>
                 {/* Ticket Type */}
-                <td className="w-[680px]">
+                <td className="w-[70%]">
                   <p className="uppercase text-lg">{ticket.name}</p>
                   <p className="text-sm text-slate-600">{ticket.description}</p>
                   <p data-test-id={`cost-${ticket.type}`} className="text-lg">
@@ -87,14 +87,14 @@ function BandForm({ band }) {
                   </p>
                 </td>
                 {/* Quantity */}
-                <td className="flex flex-row border-1 justify-between bg-white rounded-lg w-[100px] mr-4">
+                <td className="flex flex-row border-1 justify-between bg-white rounded-lg w-[20%] md:w-[15%] mr-4">
                   <span
                     data-testid={`quantity-${ticket.type}`}
-                    className="self-center px-4"
+                    className="self-center px-2 md:px-4"
                   >
                     {state[`counter${ticket.id}-${ticket.type}`] ?? 0}
                   </span>
-                  <div className="flex flex-col justify-between border-2 text-teal-800 min-w-10 w-[100px]">
+                  <div className="flex flex-col justify-between border-2 text-teal-800 min-w-10">
                     <button
                       data-testid={`increment-button-${ticket.type}`}
                       className="border-2 bg-teal-50 border-teal-800 hover:bg-teal-800 hover:text-white"
@@ -132,7 +132,7 @@ function BandForm({ band }) {
                   </div>
                 </td>
                 {/* Subtotal */}
-                <td className="text-right font-normal w-[100px]">
+                <td className="text-right font-normal w-[10%] md:w-[15%]">
                   <span data-testid={`subtotal-${ticket.type}`}>
                     &#36;
                     {state[`subtotal${ticket.id}-${ticket.type}`] ?? 0}
@@ -146,7 +146,10 @@ function BandForm({ band }) {
       </table>
       <div className="flex text-xl justify-between">
         <p>TOTAL</p>
-        <span data-testid={`total-${band.id}`} className="min-w-32 text-center">
+        <span
+          data-testid={`total-${band.id}`}
+          className="min-w-32 text-right md:mr-4"
+        >
           ${totalCost}
         </span>
       </div>

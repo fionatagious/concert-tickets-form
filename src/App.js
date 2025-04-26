@@ -9,14 +9,14 @@ import ConcertSummary from "./components/ConcertSummary";
 function App() {
   const bands = [skaBand, kpopBand, punkBand];
   return (
-    <div className="App px-11">
+    <div className="App px-4 md:px-11">
       <h1 className="text-3xl font-bold text-center my-4">
         Concert Ticket Booking
       </h1>
       {bands.map((band) => (
-        <div key={band.id}>
+        <div key={band.id} className="mb-6">
           <ConcertSummary band={band} />
-          <div className="grid grid-cols-[2fr_3fr]">
+          <div className="flex flex-col justify-center md:flex-row">
             <ConcertDetail band={band} />
             <BandForm band={band} />
           </div>

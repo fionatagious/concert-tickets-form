@@ -18,9 +18,9 @@ export default function Input({
 
   return (
     <div className="flex flex-col">
-      <div className="flex items-center w-full">
+      <div className="flex flex-row-reverse items-center">
         {icon && (
-          <div className="absolute right-20 px-3 pointer-events-none">
+          <div className="relative px-3 pointer-events-none">
             <Icon icon="credit-card" color="gray" />
           </div>
         )}

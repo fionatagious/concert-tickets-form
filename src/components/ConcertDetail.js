@@ -11,7 +11,7 @@ function ConcertDetail({ band }) {
     .replace(/ \.$/, "");
 
   return (
-    <div className="flex flex-col max-w-2xl px-6">
+    <div className="flex flex-col px-2 md:px-6 bg-white">
       <img
         src={imageMap[band.imgUrl]}
         alt={`band-photo-${band.name}`}

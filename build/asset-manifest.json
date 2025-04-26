@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/concert-tickets/static/css/main.7bbadd84.css",
-    "main.js": "/concert-tickets/static/js/main.f7ab98d6.js",
-    "blueprint-icons-all-paths-loader.js": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.597cfdeb.chunk.js",
-    "blueprint-icons-split-paths-by-size-loader.js": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js",
+    "main.css": "/concert-tickets/static/css/main.cca94594.css",
+    "main.js": "/concert-tickets/static/js/main.2f4709cc.js",
+    "blueprint-icons-all-paths-loader.js": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.cfd019bc.chunk.js",
+    "blueprint-icons-split-paths-by-size-loader.js": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.c0902d1f.chunk.js",
     "blueprint-icons-all-paths.js": "/concert-tickets/static/js/blueprint-icons-all-paths.46e58fa4.chunk.js",
     "blueprint-icons-16px-paths.js": "/concert-tickets/static/js/blueprint-icons-16px-paths.11375095.chunk.js",
     "blueprint-icons-20px-paths.js": "/concert-tickets/static/js/blueprint-icons-20px-paths.16ed0969.chunk.js",
@@ -21,16 +21,16 @@
     "static/media/blueprint-icons-20.woff2?": "/concert-tickets/static/media/blueprint-icons-20.5fddb87d78220feedb71.woff2",
     "static/media/blueprint-icons-16.woff2?": "/concert-tickets/static/media/blueprint-icons-16.fde3f423a3f0fed7df95.woff2",
     "index.html": "/concert-tickets/index.html",
-    "main.7bbadd84.css.map": "/concert-tickets/static/css/main.7bbadd84.css.map",
-    "main.f7ab98d6.js.map": "/concert-tickets/static/js/main.f7ab98d6.js.map",
-    "blueprint-icons-all-paths-loader.597cfdeb.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.597cfdeb.chunk.js.map",
-    "blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.a8cfa604.chunk.js.map",
+    "main.cca94594.css.map": "/concert-tickets/static/css/main.cca94594.css.map",
+    "main.2f4709cc.js.map": "/concert-tickets/static/js/main.2f4709cc.js.map",
+    "blueprint-icons-all-paths-loader.cfd019bc.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-all-paths-loader.cfd019bc.chunk.js.map",
+    "blueprint-icons-split-paths-by-size-loader.c0902d1f.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-split-paths-by-size-loader.c0902d1f.chunk.js.map",
     "blueprint-icons-all-paths.46e58fa4.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-all-paths.46e58fa4.chunk.js.map",
     "blueprint-icons-16px-paths.11375095.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-16px-paths.11375095.chunk.js.map",
     "blueprint-icons-20px-paths.16ed0969.chunk.js.map": "/concert-tickets/static/js/blueprint-icons-20px-paths.16ed0969.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bbadd84.css",
-    "static/js/main.f7ab98d6.js"
+    "static/css/main.cca94594.css",
+    "static/js/main.2f4709cc.js"
   ]
 }
